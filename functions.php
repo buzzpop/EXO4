@@ -69,7 +69,8 @@ function correction_sentence ($letter){
                 if ($letter[1]== $min)
                 $letter[1]= $maj;
             }
-            if ($letter[long_chaine($letter)-1]=='.'){}
+            if ($letter[long_chaine($letter)-1]=='.' || $letter[long_chaine($letter)-1]=='!' ||
+                $letter[long_chaine($letter)-1]=='?' ){}
             else{
                 $letter= $letter.'.';
             }
